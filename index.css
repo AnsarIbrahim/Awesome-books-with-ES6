@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.btn-div {
+  display: flex;
+  float: right;
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+
+td {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#books {
+  padding: 0 10%;
+}
+
+.table td.dark {
+  background-color: rgb(143, 203, 223);
+  width: 100%;
+}
+
+form#bookForm {
+  padding: 0 17%;
+}
+
+.span-para {
+  margin-right: 15%;
+}
+
+.contact-list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 50%;
+}
+
+.contact-list > li {
+  margin-left: 38%;
+}
+
+.foot {
+  width: 95%;
+  margin: 2%;
+  position: fixed;
+  bottom: 0;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+}
+
+iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+  border-radius: 20px;
+  border: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .span-para {
+    margin-right: 17%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .span-para {
+    margin-right: 22%;
+  }
+
+  .contact-list > li {
+    margin-left: 34%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .span-para {
+    margin-right: 29%;
+  }
+
+  .contact-list > li {
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .span-para {
+    margin-right: 39%;
+  }
+
+  .contact-list > li {
+    margin-left: 18%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .span-para {
+    margin-right: 45%;
+  }
+
+  .contact-list > li {
+    margin-left: 8%;
+  }
+}
