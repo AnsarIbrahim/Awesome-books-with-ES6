@@ -9,7 +9,7 @@ class Book {
     this.displayBooks();
   }
 
-  addBook(e) {
+  addBook = (e) => {
     e.preventDefault();
     const title = this.titleInput.value;
     const author = this.authorInput.value;
@@ -21,9 +21,9 @@ class Book {
       this.authorInput.value = '';
       this.bookElement(newBook, this.books.length - 1);
     }
-  }
+  };
 
-  bookElement(book, index) {
+  bookElement = (book, index) => {
     const bookContainer = document.createElement('td');
     if (index % 2 === 0) {
       bookContainer.classList.add('dark');
@@ -39,20 +39,20 @@ class Book {
     bookContainer.append(`"${book.title}" by ${book.author}`, removeButton);
     this.booksParent.appendChild(bookContainer);
     bookContainer.scrollIntoView({ behavior: 'smooth' });
-  }
+  };
 
-  displayBooks() {
+  displayBooks = () => {
     this.booksParent.innerHTML = '';
     this.books.forEach((book, index) => {
       this.bookElement(book, index);
     });
-  }
+  };
 
-  deleteBook(index) {
+  deleteBook = (index) => {
     this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
-  }
+  };
 }
 
 export default Book;
