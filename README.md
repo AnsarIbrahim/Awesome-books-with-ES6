@@ -77,7 +77,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://ansaribrahim.github.io/Awesome-books-with-ES6/#books)
+- [Live Demo Link](https://ansaribrahim.github.io/Awesome-books-with-ES6/#new-book)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
